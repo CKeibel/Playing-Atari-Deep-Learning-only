@@ -1,1 +1,2 @@
-Playing Atari Deep Learning only
+Playing Atari without Reinforcement Learning. (Deep Learning only)
+Projektarbeit -> Proof of Concept für Bachelorarbeit
