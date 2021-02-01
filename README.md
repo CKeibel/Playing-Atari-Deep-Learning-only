@@ -4,4 +4,4 @@ Projektarbeit -> Proof of Concept für [Bachelorarbeit](https://github.com/CKeib
 # Pong-v0
 * Input resized to 84x84 pixels
 * Input converted to grayscale images
-[Pong-v0](https://github.com/CKeibel/Playing-Atari-Deep-Learning-only/blob/main/Pong-v0.gif)
+![Pong-v0](https://github.com/CKeibel/Playing-Atari-Deep-Learning-only/blob/main/Pong-v0.gif)
