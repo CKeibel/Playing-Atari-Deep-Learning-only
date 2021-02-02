@@ -5,6 +5,7 @@ Projektarbeit -> Proof of Concept für [Bachelorarbeit](https://github.com/CKeib
 * Input resized to 84x84 pixels
 * Input converted to grayscale images
 <br>
+
 ### training on 1500 examples
 ![Pong-v0](https://github.com/CKeibel/Playing-Atari-Deep-Learning-only/blob/main/Pong-v0_1500Examples.gif)
 
