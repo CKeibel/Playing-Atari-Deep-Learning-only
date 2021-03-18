@@ -21,7 +21,7 @@ Preprocessing:
 <br>
 <br>
 
-# Attempt 2 - resized-grayscale images
+# Attempt 2 - Frame Stack input
 Preprocessing:
 * Preprocessing from attempt 1
 * stacking 4 images together to one input (84x84x4)
@@ -30,4 +30,17 @@ Preprocessing:
 ![Pong-v0](https://github.com/CKeibel/Playing-Atari-Deep-Learning-only/blob/main/models_in_action/02_framestack_model/Pong-v0.gif)
 ![Breakout-v0](https://github.com/CKeibel/Playing-Atari-Deep-Learning-only/blob/main/models_in_action/02_framestack_model/Breakout-v0.gif)
 ![MsPacman-v0](https://github.com/CKeibel/Playing-Atari-Deep-Learning-only/blob/main/models_in_action/02_framestack_model/MsPacman-v0.gif)
+
+<br>
+<br>
+
+# Attempt 3 - Sequence input
+Preprocessing:
+* Preprocessing from attempt 1
+* stacking 4 images to one input sequence (4x84x84x1) - ConvLSTM2D (with channels last)
+<br>
+
+![Pong-v0](https://github.com/CKeibel/Playing-Atari-Deep-Learning-only/blob/main/models_in_action/03_sequences/Pong-v0.gif)
+![Breakout-v0](https://github.com/CKeibel/Playing-Atari-Deep-Learning-only/blob/main/models_in_action/03_sequences/Breakout-v0.gif)
+![MsPacman-v0](https://github.com/CKeibel/Playing-Atari-Deep-Learning-only/blob/main/models_in_action/03_sequences/MsPacman-v0.gif)
 
