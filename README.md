@@ -14,19 +14,19 @@ Preprocessing:
 * Input converted to grayscale images
 </p>
 
-<p>
+
 ## Pong-v0 - resized-grayscale-model <br>
 ![Pong-v0](https://github.com/CKeibel/Playing-Atari-Deep-Learning-only/blob/main/models_in_action/01_resized_and_grayscale_imgs/Pong-v0.gif)
-</p>
+<br>
+<br>
 
-<p>
-## Breakout-v0
+
+## Breakout-v0 <br>
 ![Breakout-v0](https://github.com/CKeibel/Playing-Atari-Deep-Learning-only/blob/main/models_in_action/01_resized_and_grayscale_imgs/Breakout-v0.gif)
-</p>
+<br>
+<br>
 
-<p>
-## MsPacman-v0
+## MsPacman-v0 <br>
 ![MsPacman-v0](https://github.com/CKeibel/Playing-Atari-Deep-Learning-only/blob/main/models_in_action/01_resized_and_grayscale_imgs/MsPacman-v0.gif)
-
-  
-
+<br>
+<br>
