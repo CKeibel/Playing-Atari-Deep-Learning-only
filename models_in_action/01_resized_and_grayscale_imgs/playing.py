@@ -62,7 +62,7 @@ if __name__=="__main__":
     game = "MsPacman-v0"
     env = gym.make(game)
     model = create_nn((84, 84, 1), env.action_space.n)
-    model.load_weights("../results/2021-03-12_21-47-12_MsPacman-v0/nn_1500Examples_85Epochs.h5")
+    model.load_weights("../../results/2021-03-12_21-47-12_MsPacman-v0/nn_1500Examples_85Epochs.h5")
 
     frames = []  # for a GIF
     reward_list = []
@@ -94,11 +94,11 @@ if __name__=="__main__":
         print("Episode:", episode, "\tReward:", episode_reward)
         reward_list.append(episode_reward)
 
-    """ Saving frames to a GIF """ 
+    """ Saving frames to a GIF
     print("saving GIF")
     save_frames_as_gif(frames, path='./', filename=game + '.gif')
     print("Finished saving GIF!")
-
+    """
     
     
     """ Saving reward_list to a pandas dataframe
