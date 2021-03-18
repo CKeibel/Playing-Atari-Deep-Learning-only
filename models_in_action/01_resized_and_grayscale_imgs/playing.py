@@ -62,7 +62,11 @@ if __name__=="__main__":
     game = "MsPacman-v0"
     env = gym.make(game)
     model = create_nn((84, 84, 1), env.action_space.n)
-    model.load_weights("../../results/2021-03-12_21-47-12_MsPacman-v0/nn_1500Examples_85Epochs.h5")
+
+    # choose correct folder to load weights from
+    weights = {"Pong-v0": "2021-03-12_00-14-20_Pong-v0", "Breakout-v0": "2021-03-12_16-13-42_Breakout-v0", "MsPacman-v0": "2021-03-12_21-47-12_MsPacman-v0"}
+    folder = weights[game]
+    model.load_weights("../../results/" + folder + "/nn_1500Examples_85Epochs.h5")
 
     frames = []  # for a GIF
     reward_list = []
@@ -82,7 +86,8 @@ if __name__=="__main__":
             frames.append(env.render(mode="rgb_array"))
             action = np.argmax(model.predict(state))
             state, reward, done, info = env.step(action)
-    
+            if game == "Breakout-v0":
+                print(info["ale.lives"])
             episode_reward += reward
             state = resize(state)
             state = grayscale(state)
