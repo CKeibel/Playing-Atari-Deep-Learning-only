@@ -64,7 +64,7 @@ def sequence(state, seq):
 
 if __name__=="__main__":
     setting = "nn_seq_1500Examples_85Epochs"
-    game = "MsPacman-v0"
+    game = "Breakout-v0"
     env = gym.make(game)
     model = create_nn((4, 84, 84, 1), env.action_space.n)
 
@@ -79,7 +79,7 @@ if __name__=="__main__":
 
 
 
-    for episode in range(1):
+    for episode in range(20):
         done = False
         episode_reward = 0.0
         state = env.reset()
@@ -98,7 +98,7 @@ if __name__=="__main__":
         # playing a episode
         while not done:
             env.render()
-            gif.append(env.render(mode="rgb_array"))
+            #gif.append(env.render(mode="rgb_array"))
             action = np.argmax(model.predict(np.expand_dims(seq, 0)))
             state, reward, done, info = env.step(action)
             if game == "Breakout-v0":
@@ -115,13 +115,14 @@ if __name__=="__main__":
         print("Episode:", episode, "\tReward:", episode_reward)
         reward_list.append(episode_reward)
 
-    """ Saving reward_list to pandas dataframe 
+    """ Saving reward_list to pandas dataframe """
     import pandas as pd 
     df = pd.DataFrame(reward_list, columns=["Rewards"])
     df.to_csv(game + ".csv")
-    """
+    
 
-    """ Saving GIF """
+    """ Saving GIF 
     print("Saving GIF")
     save_frames_as_gif(gif, filename=game + ".gif")
     print("Finished saving gif!")
+    """
