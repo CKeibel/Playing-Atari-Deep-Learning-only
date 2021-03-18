@@ -15,7 +15,7 @@ Preprocessing:
 </p>
 
 <p>
-## Pong-v0 - resized-grayscale-model
+## Pong-v0 - resized-grayscale-model <br>
 ![Pong-v0](https://github.com/CKeibel/Playing-Atari-Deep-Learning-only/blob/main/models_in_action/01_resized_and_grayscale_imgs/Pong-v0.gif)
 </p>
 
